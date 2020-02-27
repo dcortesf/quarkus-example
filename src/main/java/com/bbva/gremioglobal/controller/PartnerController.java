@@ -19,11 +19,17 @@ public class PartnerController{
     @Inject
     private PartnerService partnerService;
 
-
-
     @GET
     public List<Partner> list(){
         return partnerService.getPartners();
+    }
+
+    @POST
+    public Partner savePartner(Partner partner){
+        System.out.println("Lo tengo");
+        partnerService.addPartner(partner);
+        System.out.println("Lo suelto");
+        return partner;
     }
     
 }

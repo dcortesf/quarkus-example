@@ -20,6 +20,6 @@ public class PartnerService{
 
     @Transactional
     public void addPartner(Partner partner){
-        partnerRepository.persist(partner);
+        partnerRepository.persist(partner);  
     }
 }
