@@ -14,7 +14,7 @@ public class PartnerService{
     @Inject
     private PartnerRepository partnerRepository;
 
-    public List<Partner> getPartner(){
+    public List<Partner> getPartners(){
         return partnerRepository.listAll();
     }
 

@@ -1,6 +1,5 @@
 package com.bbva.gremioglobal.entity;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
 import javax.persistence.*;
@@ -8,6 +7,7 @@ import javax.persistence.*;
 import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
+@Table(name="partner")
 public class Partner extends PanacheEntityBase{
 
     @Id
